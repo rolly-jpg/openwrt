@@ -15,7 +15,7 @@ jobs:
               run: |
                 echo "CONFIG_TARGET_ath79=y\n" > .config
                 echo "CONFIG_TARGET_ath79_tiny=y\n" >> .config
-                echo "CONFIG_TARGET_MULTI_PROFILE=n\n" >> .config
+                echo "CONFIG_TARGET_MULTI_PROFILE=y\n" >> .config
                 echo "CONFIG_TARGET_PER_DEVICE_ROOTFS=y\n" >> .config
                 echo "CONFIG_TARGET_DEVICE_ath79_tiny_DEVICE_tplink_tl-wr940n-v6=y\n" >> .config
                 echo "CONFIG_PACKAGE_luci=n\n" >> .config
