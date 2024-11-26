@@ -18,7 +18,6 @@ jobs:
                 echo "CONFIG_TARGET_MULTI_PROFILE=y\n" >> .config
                 echo "CONFIG_TARGET_PER_DEVICE_ROOTFS=y\n" >> .config
                 echo "CONFIG_TARGET_DEVICE_ath79_tiny_DEVICE_tplink_tl-wr940n-v6=y\n" >> .config
-                echo "CONFIG_PACKAGE_luci=n\n" >> .config
                 make defconfig
             - name: Download package sources
               run: make download V=s
@@ -35,7 +34,7 @@ jobs:
                 make -j$(nproc) V=s || \
                 make V=s
             - name: TAR output
-              run: tar -cvf filogicx-images.tar bin/targets/ath79/tiny/
+              run: tar -cvf tinyx-images.tar bin/targets/ath79/tiny/
             - name: Upload artifacts
               uses: actions/upload-artifact@v3
               with:
