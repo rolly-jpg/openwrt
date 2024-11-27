@@ -78,7 +78,7 @@ jobs:
                 echo "CONFIG_REPRODUCIBLE_DEBUG_INFO=y\n" > .config
                 echo "CONFIG_SDK=y\n" > .config
                 echo "CONFIG_SDK_LLVM_BPF=y\n" > .config
-                echo "CONFIG_TARGET_ALL_PROFILES=y\n" > .config
+                echo "CONFIG_TARGET_ALL_PROFILES=n\n" > .config
                 echo "CONFIG_USE_LLVM_BUILD=y\n" > .config
                 echo "CONFIG_VERSIONOPT=y\n" > .config
                 echo "CONFIG_VERSION_BUG_URL=""\n" > .config
